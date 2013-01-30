@@ -17,16 +17,15 @@ chrome.webRequest.onBeforeRequest.addListener(
 	
 	/* We should make an ajax request to see if the targeted location actually exists. */
 	
-	
     return {redirectUrl: redirect};
   },
   {
     urls: [
-      "*fp/*",
-	  "*cws/*",
-	  "*dev/*",
-	  "*test/*",
-	  "*migr/*"
+      "*://fp/*",
+	  "*://cws/*",
+	  "*://dev/*",
+	  "*://test/*",
+	  "*://migr/*"
     ]
   },
   ["blocking"]);
