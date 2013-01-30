@@ -1,3 +1,2 @@
 ======
-ART (Auburn Redirect Tool)
-======
+ART (Auburn Redirect Tool)\n
