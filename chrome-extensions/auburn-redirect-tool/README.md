@@ -46,4 +46,5 @@ add "http://" to the front of your shorthand attempts THE FIRST TIME. After that
 3. Todo List
 -
 * Make this modular and customizable for external use!
-* Fix the error everyone but me is getting. o.o
+* Add Clay's Auburn Link Fixer (auburn.user.js by clay@smockle.com) for easy team use stuff!
+* Add AJAX calls so we can avoid redirecting to 404's
