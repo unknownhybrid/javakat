@@ -1,6 +1,5 @@
 ART (Auburn Redirect Tool)
-======
--
+=
 Author/Copyright: Jake Harris (javakatdesign@gmail.com)
 
 ART (currently stands for Auburn Redirect Tool) allows for use of simple, shorthand pseudo-domains in frequent
@@ -9,14 +8,14 @@ names the same way we speak them.
 
 
 Table of Contents:
-===
+-
 1. Use and Features
 2. Known Errors and Bugs
 3. Todo List
 
 
 1. Use and Features
-===
+-
 ART is an extension to make our lives just that little bit easier here at CWS. Now, visiting sites on our most
 frequented domains is simple and intuitive. We can type them much like we speak them!
 If you want someone to visit a site, for debugging purposes or what-have-you, you might say something like,
@@ -39,11 +38,11 @@ to get redirected to the right place! Now, wasn't that easy?
 NOTE: List of properly-handled subdomains can be found on the team site announcements under "ART-handled subdomains".
 
 2. Known Errors and Bugs
-===
+-
 ART frequently breaks on a person's first attempt to visit a particular project. To work around this, for now,
 add "http://" to the front of your shorthand attempts THE FIRST TIME. After that, everything should run fine.
 
 3. Todo List
-===
+-
 * Make this modular and customizable for external use!
 * Fix the error everyone but me is getting. o.o
