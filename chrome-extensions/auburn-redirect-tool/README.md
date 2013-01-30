@@ -35,6 +35,7 @@ and, if ART handled that subdomain properly, you could type:
 ```` cats/flying ````
 
 to get redirected to the right place! Now, wasn't that easy?
+
 NOTE: List of properly-handled subdomains can be found on the team site announcements under "ART-handled subdomains".
 
 2. Known Errors and Bugs
