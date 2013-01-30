@@ -2,7 +2,7 @@ ART (Auburn Redirect Tool)
 =
 Author/Copyright: Jake Harris (javakatdesign@gmail.com)
 
-ART (currently stands for Auburn Redirect Tool) allows for use of simple, shorthand pseudo-domains in frequent
+ART allows for use of simple, shorthand pseudo-domains in frequent
 use by the CWS team. It makes visiting the web apps we develop much more intuitive, since now we can type their
 names the same way we speak them.
 
