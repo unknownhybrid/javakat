@@ -3,6 +3,7 @@ Chrome extensions
 ======
 Chrome extensions written by me!
 
-List of extensions:
+===
+Table of Contents:
 ===
 ART (Auburn Redirect Tool)
