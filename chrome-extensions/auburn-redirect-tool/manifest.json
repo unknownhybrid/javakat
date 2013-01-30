@@ -1,0 +1,12 @@
+{
+  "name": "ART",
+  "version": "0.3",
+  "description": "Auburn Redirect Tool allows simple URL replacement ciphers for domains frequently used by the CWS team.",
+  "permissions": ["webRequest", "webRequestBlocking",
+                  "*://fp/*", "*://cws/*", "*://dev/*", "*://test/*", "*://migr/*"],
+  "background": {
+    "scripts": ["art.js"]
+  },
+
+  "manifest_version": 2
+}
