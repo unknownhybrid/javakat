@@ -1,6 +1,6 @@
 ART (Auburn Redirect Tool)
 =
-Author/Copyright: Jake Harris (javakatdesign@gmail.com)
+Authors/Copyright: Jake Harris (javakatdesign@gmail.com), Clay Miller (clay@smockle.com) and Tyler Atwell (sta0003@auburn.edu).
 
 ART allows for use of simple, shorthand pseudo-domains in frequent
 use by the CWS team. It makes visiting the web apps we develop much more intuitive, since now we can type their
