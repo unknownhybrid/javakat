@@ -1,0 +1,11 @@
+var a = document.querySelector("#user_login");
+var b = document.createElement("input");
+b.setAttribute("class", "clayisawesome");
+b.setAttribute("type", "text");
+b.setAttribute("id", "user_login");
+b.setAttribute("name", "user");
+b.setAttribute("size", "20");
+b.setAttribute("tabindex", "10");
+b.setAttribute("autofocus", "autofocus");
+a.parentNode.insertBefore(b, a.nextSibling);
+a.parentNode.removeChild(a);
