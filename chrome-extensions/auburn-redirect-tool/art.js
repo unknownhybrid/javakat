@@ -1,14 +1,15 @@
-/*
-	Title: Auburn Redirect Tool (ART)
-	Author/Copyright: Jake Harris (jch0039@auburn.edu if you're on CWS, else javakatdesign@gmail.com)
-*/
+/* art.js
+ * Auburn Redirect Tool (ART)
+ * Enables shortlinks. Forces secure fp requests.
+ * Copyright © 2013 Jake Harris (javakatdesign@gmail.com) and Clay Miller (clay@smockle.com)
+ */
 
 chrome.webRequest.onBeforeRequest.addListener(
   function(info) {
 	var redirect;
-	
+
 	/* We read the requested URL and redirect to the proper location based on that. */
-	
+	if (~info.url.indexOf("http://fp.auburn.edu")) redirect = "https://fp.auburn.edu" + info.url.substring(info.url.indexOf("http://fp.auburn.edu") + "http://fp.auburn.edu".length);
 	if(~info.url.indexOf("fp/")) redirect = "https://fp.auburn.edu/" + info.url.substring(info.url.indexOf("fp/") + "fp/".length);
 	else if(~info.url.indexOf("cws/")) redirect = "http://cws.auburn.edu/" + info.url.substring(info.url.indexOf("cws/") + "cws/".length);
 	else if(~info.url.indexOf("dev/")) redirect = "http://cwsdev.auburn.edu/" + info.url.substring(info.url.indexOf("dev/") + "dev/".length);
@@ -21,6 +22,7 @@ chrome.webRequest.onBeforeRequest.addListener(
   },
   {
     urls: [
+	  "http://fp.auburn.edu/*",
       "*://fp/*",
 	  "*://cws/*",
 	  "*://dev/*",
@@ -29,4 +31,3 @@ chrome.webRequest.onBeforeRequest.addListener(
     ]
   },
   ["blocking"]);
-  
