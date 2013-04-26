@@ -7,71 +7,82 @@
 	
 	USE:
 	<div class="boxkat-accordion">
-		<div class="boxkat-accordion-atom">
-			<div class="boxkat-accordion-header">
-				<label class="ddl-clickie" for="content-toggler-X">YOUR HEADER HERE <span>YOUR ALT TEXT HERE</span></label>
-			</div>
+		<div class="boxkat-accordion-molecule">
 			<input type="checkbox" class="boxkat-accordion-content-toggle" id="content-toggler-X" />
-			<div class="boxkat-accordion-content-wrapper">
-				<div class="boxkat-accordion-content">
-					YOUR CONTENT HERE <span>YOUR ALT TEXT HERE</span>
+			<div class="boxkat-accordion-atom boxkat-accordion-header">
+				<label for="content-toggler-X" class="boxkat-accordion-chk">
+					<span class="boxkat-accordion-heading">YOUR HEADER HERE</span>
+					<span class="boxkat-accordion-subtitle">YOUR ALT TEXT HERE</span>
+				</label>
+			</div>
+			<div class="boxkat-accordion-content">
+				<div class="boxkat-accordion-atom">
+					<span class="boxkat-accordion-heading">YOUR HEADER HERE</span>
+					<span class="boxkat-accordion-subtitle">YOUR ALT TEXT HERE</span>
 				</div>
-				<div class="boxkat-accordion-content">
-					YOUR CONTENT HERE <span>YOUR ALT TEXT HERE</span>
+				<div class="boxkat-accordion-atom">
+					<span class="boxkat-accordion-heading">YOUR HEADER HERE</span>
 				</div>
 			</div>
 		</div>
 	</div>
 */
-.boxkat-accordion
-{
-	min-width:60%;
-	margin-top:12px;
-	font-size:1.3em;
-	display:inline-block;
+.boxkat-accordion {
+    min-width:60%;
+    width:100%;
+    display:inline-block;
+    color:#fff;
+    font-family: MS Shell Dlg, Calibri, Arial;
+    overflow:hidden;
 }
-.boxkat-accordion-atom /* A molecule is a unit comprised of a header (what's displayed when the accordion is collapsed) and its content elements (the things that get displayed when the accordion expands). */
-{
+.boxkat-accordion-molecule
+/* A molecule is a unit comprised of a header (what's displayed when the accordion is collapsed) and its content elements (the things that get displayed when the accordion expands). */
+ {
 }
-.boxkat-accordion-header
-{
-	background: #496e9c;
-	color: #fff;
-	padding:12px 12px 12px 12px;
-	cursor:pointer;
-	position:relative;
+.boxkat-accordion-atom {
+    position:relative;
+    color:#fff;
+    padding:.75em;
+    cursor:pointer;
+    display:block;
 }
-.boxkat-accordion-header > label
-{
-	cursor:pointer;
+.boxkat-accordion-atom.boxkat-accordion-header {
+    background: #496e9c;
+    color: #fff;
+    cursor:pointer;
+    position:relative;
+    width:100%;
 }
-.boxkat-accordion-header > label > span
-{
-	color: #183a65;
+input.boxkat-accordion-content-toggle {
+    display:none;
 }
-input[type="checkbox"].boxkat-accordion-content-toggle:checked ~ .boxkat-accordion-content-wrapper
-{
-	display:block;
-	overflow:hidden;
+.boxkat-accordion-atom.boxkat-accordion-header > label.boxkat-accordion-chk {
+    cursor:pointer;
+    color: #fff;
 }
-.boxkat-accordion-content-wrapper
-{
-	display:none;
+.boxkat-accordion-atom.boxkat-accordion-header .boxkat-accordion-heading {
+    color: #fff;  
 }
-.boxkat-accordion-content
-{
-	position:relative;
-		left:7%;
-	color:#fff;
-	padding:12px 12px 12px 12px;
-	cursor:pointer;
-	background:#f68026;
-	display:block;
+.boxkat-accordion-atom.boxkat-accordion-header .boxkat-accordion-subtitle {
+    color: #183a65;
 }
-.boxkat-accordion-content > span
-{
-	color:#a04c0c;
-	width:60%;
+input[type="checkbox"].boxkat-accordion-content-toggle:checked ~ .boxkat-accordion-content {
+    display:block;
+    overflow:hidden;
+}
+.boxkat-accordion-content {
+    display:none;
+    width:100%;
+    position:relative;
+    left:10%;
+	background: #f68026;
+}
+
+.boxkat-accordion-content > .boxkat-accordion-atom > .boxkat-accordion-heading {
+    color:#fff;
+}
+.boxkat-accordion-content > .boxkat-accordion-atom > .boxkat-accordion-subtitle {
+    color:#a04c0c
 }
 /*
 .boxkat-accordion-header
